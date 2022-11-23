@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">EventOrganiser</string>
+
+    <string-array name="types">
+        <item>Sport</item>
+        <item>Music</item>
+        <item>Party</item>
+        <item>Food</item>
+        <item>Festival</item>
+    </string-array>
 </resources>
