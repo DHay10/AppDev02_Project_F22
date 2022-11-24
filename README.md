@@ -13,4 +13,6 @@ It contains:
 
 ## Authors
 
-Ashmitha Kanagiah, Andy-Tason Nguyen-Chao, Ibrahim Awad
+- [Ashmitha Kanagiah](https://github.com/ashmyytaa) 
+- [Andy-Tason Nguyen-Chao](https://github.com/DHay10)
+- [Ibrahim Awad](https://github.com/IbramsA)
