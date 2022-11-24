@@ -7,35 +7,53 @@
     tools:context=".EventCreateActivity">
 
     <Button
-        android:id="@+id/create"
-        android:layout_width="137dp"
-        android:layout_height="45dp"
+        android:id="@+id/backB01"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
         android:backgroundTint="#FF0000"
         android:fontFamily="sans-serif-medium"
         android:text="Back"
         app:cornerRadius="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintHorizontal_bias="0.118"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.937"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionET"
+        app:layout_constraintVertical_bias="0.067"
         tools:ignore="TextContrastCheck" />
 
     <Button
-        android:id="@+id/back"
-        android:layout_width="137dp"
-        android:layout_height="45dp"
+        android:id="@+id/createB"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
         android:backgroundTint="#FF0000"
         android:fontFamily="sans-serif-medium"
         android:text="Create"
         app:cornerRadius="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintHorizontal_bias="0.889"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.936"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionET"
+        app:layout_constraintVertical_bias="0.067"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/dateB"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#FF0000"
+        android:fontFamily="sans-serif-medium"
+        android:text="Select Date"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateTV"
+        app:layout_constraintVertical_bias="0.033"
         tools:ignore="TextContrastCheck" />
 
     <TextView
@@ -56,7 +74,7 @@
         app:layout_constraintVertical_bias="0.023" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/imageB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -83,11 +101,13 @@
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:textColor="#FF0000"
+        android:textColorHighlight="#FF2323"
+        android:textColorLink="#FD2020"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/imageB"
         app:layout_constraintVertical_bias="0.0" />
 
     <Spinner
@@ -119,10 +139,10 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/typeS"
-        app:layout_constraintVertical_bias="0.058" />
+        app:layout_constraintVertical_bias="0.009" />
 
     <TextView
-        android:id="@+id/description"
+        android:id="@+id/descriptionET"
         android:layout_width="349dp"
         android:layout_height="163dp"
         android:text="Description"
@@ -130,7 +150,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.804" />
+        app:layout_constraintTop_toBottomOf="@+id/dateB"
+        app:layout_constraintVertical_bias="0.062" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
