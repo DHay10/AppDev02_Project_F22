@@ -97,7 +97,6 @@
         android:layout_marginEnd="32dp"
         android:ems="10"
         android:hint="Title"
-
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:textColor="#FF0000"
@@ -125,7 +124,7 @@
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="SpeakableTextPresentCheck" />
 
-    <TextView
+    <EditText
         android:id="@+id/dateTV"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -133,7 +132,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         android:text="Date"
-        android:textAlignment="center"
+        android:textColor="#FF0000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -141,11 +140,17 @@
         app:layout_constraintTop_toBottomOf="@+id/typeS"
         app:layout_constraintVertical_bias="0.009" />
 
+<<<<<<< Updated upstream
     <TextView
         android:id="@+id/descriptionET"
+=======
+    <EditText
+        android:id="@+id/description"
+>>>>>>> Stashed changes
         android:layout_width="349dp"
         android:layout_height="163dp"
         android:text="Description"
+        android:textColor="#FF0000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.516"
