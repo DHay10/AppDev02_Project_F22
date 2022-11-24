@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class EventDetails extends AppCompatActivity {
-    Button option, back, update
+    Button option, back, update;
 
 
     @Override
