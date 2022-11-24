@@ -25,7 +25,7 @@
 
 
     <Button
-        android:id="@+id/attendees"
+        android:id="@+id/attendees1"
         android:layout_width="577dp"
         android:layout_height="102dp"
         android:backgroundTint="#00FF0000"
@@ -61,7 +61,7 @@
         tools:ignore="TextContrastCheck" />
 
     <Button
-        android:id="@+id/create"
+        android:id="@+id/back2"
         android:layout_width="176dp"
         android:layout_height="65dp"
         android:backgroundTint="#FF0000"
