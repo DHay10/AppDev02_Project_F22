@@ -8,10 +8,8 @@ import android.app.Dialog;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
-
 import android.widget.Button;
 import android.widget.DatePicker;
-import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -22,8 +20,6 @@ public class EventCreateActivity extends AppCompatActivity {
     Button dateB, backB01, createB;
     Spinner typeS;
     TextView dateTV;
-    EditText createTitle, createDate, createDescription;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,9 +28,6 @@ public class EventCreateActivity extends AppCompatActivity {
 
         dateB = findViewById(R.id.dateB);
         dateTV = findViewById(R.id.dateTV);
-        createTitle = findViewById(R.id.titleET);
-        createDate = findViewById(R.id.dateTV);
-        createDescription = findViewById(R.id.description);
         typeS = findViewById(R.id.typeS);
         backB01 = findViewById(R.id.backB01);
         createB = findViewById(R.id.createB);
