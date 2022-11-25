@@ -10,7 +10,7 @@
         android:id="@+id/backB01"
         android:layout_width="140dp"
         android:layout_height="48dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginBottom="4dp"
         android:backgroundTint="#FF0000"
         android:fontFamily="sans-serif-medium"
         android:text="Back"
@@ -19,8 +19,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.118"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/descriptionET"
-        app:layout_constraintVertical_bias="0.067"
         tools:ignore="TextContrastCheck" />
 
     <Button
@@ -28,16 +26,17 @@
         android:layout_width="140dp"
         android:layout_height="48dp"
         android:layout_marginTop="24dp"
+        android:layout_marginBottom="4dp"
         android:backgroundTint="#FF0000"
         android:fontFamily="sans-serif-medium"
         android:text="Create"
         app:cornerRadius="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.889"
+        app:layout_constraintHorizontal_bias="0.881"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/descriptionET"
-        app:layout_constraintVertical_bias="0.067"
+        app:layout_constraintVertical_bias="0.975"
         tools:ignore="TextContrastCheck" />
 
     <Button
@@ -140,13 +139,9 @@
         app:layout_constraintTop_toBottomOf="@+id/typeS"
         app:layout_constraintVertical_bias="0.009" />
 
-<<<<<<< Updated upstream
-    <TextView
-        android:id="@+id/descriptionET"
-=======
+
     <EditText
         android:id="@+id/description"
->>>>>>> Stashed changes
         android:layout_width="349dp"
         android:layout_height="163dp"
         android:text="Description"

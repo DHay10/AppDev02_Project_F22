@@ -8,12 +8,10 @@ import android.app.Dialog;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
-<<<<<<< Updated upstream
+
 import android.widget.Button;
 import android.widget.DatePicker;
-=======
 import android.widget.EditText;
->>>>>>> Stashed changes
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -23,30 +21,20 @@ public class EventCreateActivity extends AppCompatActivity {
 
     Button dateB, backB01, createB;
     Spinner typeS;
-<<<<<<< Updated upstream
     TextView dateTV;
-=======
     EditText createTitle, createDate, createDescription;
 
->>>>>>> Stashed changes
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event_create);
 
-<<<<<<< Updated upstream
         dateB = findViewById(R.id.dateB);
         dateTV = findViewById(R.id.dateTV);
-=======
         createTitle = findViewById(R.id.titleET);
         createDate = findViewById(R.id.dateTV);
         createDescription = findViewById(R.id.description);
-
-
-
-
->>>>>>> Stashed changes
         typeS = findViewById(R.id.typeS);
         backB01 = findViewById(R.id.backB01);
         createB = findViewById(R.id.createB);
