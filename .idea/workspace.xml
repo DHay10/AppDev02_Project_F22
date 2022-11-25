@@ -4,70 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d60ef91c-8dfe-4f04-abf6-b19ea732d97e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/.idea/deploymentTargetDropDown.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/.idea/deploymentTargetDropDown.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/proguard-rules.pro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/androidTest/java/com/example/eventorganiser/ExampleInstrumentedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/androidTest/java/com/example/eventorganiser/ExampleInstrumentedTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/main/java/com/example/eventorganiser/AdminLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/main/java/com/example/eventorganiser/AdminLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/main/java/com/example/eventorganiser/Attendees.java" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/main/java/com/example/eventorganiser/Attendees.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/main/java/com/example/eventorganiser/CustomerLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/main/java/com/example/eventorganiser/CustomerLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/main/java/com/example/eventorganiser/DashboardActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/main/java/com/example/eventorganiser/DashboardActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/main/java/com/example/eventorganiser/EventCalendar.java" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/main/java/com/example/eventorganiser/EventCalendar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/main/java/com/example/eventorganiser/EventCreateActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/main/java/com/example/eventorganiser/EventCreateActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/main/java/com/example/eventorganiser/EventDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/main/java/com/example/eventorganiser/EventDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/main/java/com/example/eventorganiser/EventListActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/main/java/com/example/eventorganiser/EventListActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/main/java/com/example/eventorganiser/EventOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/main/java/com/example/eventorganiser/EventOptions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/main/java/com/example/eventorganiser/Filters.java" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/main/java/com/example/eventorganiser/Filters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/main/java/com/example/eventorganiser/ProfileCreation.java" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/main/java/com/example/eventorganiser/ProfileCreation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/main/java/com/example/eventorganiser/ProfileEdit.java" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/main/java/com/example/eventorganiser/ProfileEdit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/main/java/com/example/eventorganiser/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/main/java/com/example/eventorganiser/Registration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/font/roboto_bold.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/font/roboto_bold.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/layout/activity_admin_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/layout/activity_admin_login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/layout/activity_attendees.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/layout/activity_attendees.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/layout/activity_customer_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/layout/activity_customer_login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/layout/activity_dashboard.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/layout/activity_dashboard.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/layout/activity_event_calendar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/layout/activity_event_calendar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/layout/activity_event_create.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/layout/activity_event_create.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/layout/activity_event_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/layout/activity_event_details.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/layout/activity_event_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/layout/activity_event_list.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/layout/activity_event_options.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/layout/activity_event_options.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/layout/activity_filters.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/layout/activity_filters.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/layout/activity_profile_creation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/layout/activity_profile_creation.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/layout/activity_profile_edit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/layout/activity_profile_edit.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/layout/activity_registration.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/layout/activity_registration.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/values-night/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/values-night/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/values/font_certs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/values/font_certs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/values/preloaded_fonts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/values/preloaded_fonts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/xml/backup_rules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/app/src/test/java/com/example/eventorganiser/ExampleUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/app/src/test/java/com/example/eventorganiser/ExampleUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventOrganiser/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/EventOrganiser/settings.gradle" afterDir="false" />
-    </list>
+    <list default="true" id="d60ef91c-8dfe-4f04-abf6-b19ea732d97e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

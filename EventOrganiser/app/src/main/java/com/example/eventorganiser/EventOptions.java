@@ -31,8 +31,8 @@ public class EventOptions extends AppCompatActivity {
         delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               //  Intent intent = new Intent(EventOptions.this,Attendees.class);
-               // startActivity(intent);
+               Intent intent = new Intent(EventOptions.this,Attendees.class);
+               startActivity(intent);
             }
         });
 
