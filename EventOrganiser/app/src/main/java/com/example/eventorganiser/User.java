@@ -1,6 +1,7 @@
 package com.example.eventorganiser;
 
 public class User {
+
     int id;
 
     String username, password_hash, fname, lname, email, phone;
@@ -98,4 +99,6 @@ public class User {
     public void setPhone(String phone) {
         this.phone = phone;
     }
+
+
 }
