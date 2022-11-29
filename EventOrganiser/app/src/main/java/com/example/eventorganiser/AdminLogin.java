@@ -24,16 +24,6 @@ public class AdminLogin extends AppCompatActivity {
         loginBtn = findViewById(R.id.loginButton);
 
 
-        customerBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), CustomerLogin.class);
-                startActivity(i);
-            }
-        });
-
-
-
 
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,6 +41,24 @@ public class AdminLogin extends AppCompatActivity {
                 }
             }
         });
+
+
+
+
+
+        customerBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), CustomerLogin.class);
+                startActivity(i);
+            }
+        });
+
+
+
+
+
+
 
 
     }
