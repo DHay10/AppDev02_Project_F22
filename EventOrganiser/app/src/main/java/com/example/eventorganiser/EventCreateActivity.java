@@ -38,6 +38,7 @@ public class EventCreateActivity extends AppCompatActivity {
         titleB = findViewById(R.id.titleET);
         descriptionB = findViewById(R.id.descriptionET);
 
+
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.types, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -51,6 +52,9 @@ public class EventCreateActivity extends AppCompatActivity {
         });
 
 
+
+
+
         createB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -61,15 +65,12 @@ public class EventCreateActivity extends AppCompatActivity {
                     Toast.makeText(EventCreateActivity.this, "Enter All Data", Toast.LENGTH_SHORT).show();
                 } else {
 
-
-
-                 // dbHelperr = new DBHelper(EventCreateActivity.this);
-                 //   User newUser = new User(title, description);
-                 //   dbHelperr.addUser(newUser);
-                 //   Toast.makeText(getApplicationContext(), "Signed up successfully!",
-                 //    Toast.LENGTH_SHORT).show();
-                 //  Intent i = new Intent(getApplicationContext(), EventListActivity.class);
-                 //    startActivity(i);
+                    DBHelper dbHelperr = new DBHelper(EventCreateActivity.this);
+                   User newUser = new User(title, description);
+                   dbHelperr.addUser(newUser);
+                   Toast.makeText(getApplicationContext(), "Signed up successfully!",
+                   Toast.LENGTH_SHORT).show(); Intent i = new Intent(getApplicationContext(), EventListActivity.class);
+                   startActivity(i);
 
 
 

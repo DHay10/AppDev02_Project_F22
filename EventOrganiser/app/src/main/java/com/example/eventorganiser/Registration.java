@@ -51,7 +51,7 @@ public class Registration extends AppCompatActivity {
                     if (password.equals(passwordConf)) {
                         dbHelper = new DBHelper(Registration.this);
                         User newUser = new User(username, email, password);
-                    //    dbHelper.addUser(newUser);
+                        dbHelper.addUser(newUser);
                         Toast.makeText(getApplicationContext(), "Signed up successfully!",
                                 Toast.LENGTH_SHORT).show();
                         Intent i = new Intent(getApplicationContext(), ProfileCreation.class);

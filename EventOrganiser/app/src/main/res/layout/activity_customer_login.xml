@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".CustomerLogin">
+    android:layout_height="match_parent">
+   // tools:context=".CustomerLogin"
 
     <Button
         android:id="@+id/registerButton"
@@ -20,7 +20,7 @@
         app:layout_constraintVertical_bias="0.607" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/titlePassC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Password"
@@ -35,7 +35,7 @@
         app:layout_constraintVertical_bias="0.356" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/titleCustomerC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="GoEvent"
@@ -50,7 +50,7 @@
         app:layout_constraintVertical_bias="0.063" />
 
     <EditText
-        android:id="@+id/usernameInput"
+        android:id="@+id/usernameInputC"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:ems="10"
@@ -64,7 +64,7 @@
         app:layout_constraintVertical_bias="0.243" />
 
     <EditText
-        android:id="@+id/passwordInput"
+        android:id="@+id/passwordInputC"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:ems="10"
@@ -79,7 +79,7 @@
         app:layout_constraintVertical_bias="0.408" />
 
     <Button
-        android:id="@+id/loginButton"
+        android:id="@+id/loginButtonC"
         android:layout_width="110dp"
         android:layout_height="50dp"
         android:backgroundTint="@android:color/holo_red_light"
@@ -106,7 +106,7 @@
         app:layout_constraintVertical_bias="0.844" />
 
     <Button
-        android:id="@+id/adminButton"
+        android:id="@+id/adminButtonAA"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@android:color/white"
@@ -120,7 +120,7 @@
         app:layout_constraintVertical_bias="0.925" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/titleUsernameC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Username"

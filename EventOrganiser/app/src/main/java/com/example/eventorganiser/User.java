@@ -42,6 +42,8 @@ public class User {
         this.email = email;
     }
 
+    public User(String title, String description) {
+    }
 
 
     public int getId() {
