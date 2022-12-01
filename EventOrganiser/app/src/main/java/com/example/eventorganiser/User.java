@@ -42,10 +42,6 @@ public class User {
         this.email = email;
     }
 
-    public User(String title, String description) {
-    }
-
-
     public int getId() {
         return id;
     }
@@ -101,6 +97,5 @@ public class User {
     public void setPhone(String phone) {
         this.phone = phone;
     }
-
 
 }
