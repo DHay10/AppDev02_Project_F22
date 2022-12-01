@@ -88,5 +88,15 @@ public class DBHelper extends SQLiteOpenHelper {
         return Users;
     }
 
-
+//    public void addEvent(Event event) {
+//        ContentValues contentValues = new ContentValues();
+//        contentValues.put("title", user.getUsername());
+//        contentValues.put("password_hash", user.getPassword_hash());
+//        contentValues.put("fname", user.getFname());
+//        contentValues.put("lname", user.getLname());
+//        contentValues.put("email", user.getEmail());
+//        contentValues.put("phone", user.getPhone());
+//        sqLiteDatabase = this.getWritableDatabase();
+//        sqLiteDatabase.insert(DBHelper.TABLE_USER, null ,contentValues);
+//    }
 }
