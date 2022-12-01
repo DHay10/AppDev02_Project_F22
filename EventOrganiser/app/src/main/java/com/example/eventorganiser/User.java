@@ -1,6 +1,7 @@
 package com.example.eventorganiser;
 
 public class User {
+
     int id;
 
     String username, password_hash, fname, lname, email, phone;
@@ -40,8 +41,6 @@ public class User {
         this.password_hash = password_hash;
         this.email = email;
     }
-
-
 
     public int getId() {
         return id;
@@ -98,4 +97,5 @@ public class User {
     public void setPhone(String phone) {
         this.phone = phone;
     }
+
 }

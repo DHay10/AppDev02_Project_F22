@@ -5,13 +5,16 @@ import androidx.fragment.app.DialogFragment;
 
 import android.app.DatePickerDialog;
 import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Calendar;
 
@@ -20,6 +23,7 @@ public class EventCreateActivity extends AppCompatActivity {
     Button dateB, backB01, createB;
     Spinner typeS;
     TextView dateTV;
+    EditText titleB, descriptionB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +35,9 @@ public class EventCreateActivity extends AppCompatActivity {
         typeS = findViewById(R.id.typeS);
         backB01 = findViewById(R.id.backB01);
         createB = findViewById(R.id.createB);
+        titleB = findViewById(R.id.titleET);
+        descriptionB = findViewById(R.id.descriptionET);
+
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.types, android.R.layout.simple_spinner_item);
@@ -43,7 +50,46 @@ public class EventCreateActivity extends AppCompatActivity {
                 showDatePickerDialog(v);
             }
         });
+
+
+
+
+
+        createB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String title = titleB.getText().toString();
+                String description = descriptionB.getText().toString();
+
+                if (title.length() <= 0 || description.length() <= 0) {
+                    Toast.makeText(EventCreateActivity.this, "Enter All Data", Toast.LENGTH_SHORT).show();
+                } else {
+
+                    DBHelper dbHelperr = new DBHelper(EventCreateActivity.this);
+                   User newUser = new User(title, description);
+                   dbHelperr.addUser(newUser);
+                   Toast.makeText(getApplicationContext(), "Signed up successfully!",
+                   Toast.LENGTH_SHORT).show(); Intent i = new Intent(getApplicationContext(), EventListActivity.class);
+                   startActivity(i);
+
+
+
+                }
+            }
+        });
+
+
+
+
+
+
+
+
     }
+
+
+
+
 
     public void showDatePickerDialog(View v) {
         DialogFragment newFragment = new DatePickerFragment();
@@ -69,5 +115,16 @@ public class EventCreateActivity extends AppCompatActivity {
             dateTV.setText(year + ", " + month + ", " + day);
         }
     }
+
+
+
+
+
+
+
+
+
+
+
 
 }

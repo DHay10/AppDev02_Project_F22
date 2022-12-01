@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".EventCreateActivity">
+    android:layout_height="match_parent">
+  //  tools:context=".EventCreateActivity"
 
     <Button
         android:id="@+id/backB01"
@@ -141,7 +141,7 @@
         app:layout_constraintTop_toBottomOf="@+id/typeS"
         app:layout_constraintVertical_bias="0.009" />
 
-    <TextView
+    <EditText
         android:id="@+id/descriptionET"
         android:layout_width="349dp"
         android:layout_height="163dp"

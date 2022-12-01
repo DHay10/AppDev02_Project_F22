@@ -15,7 +15,7 @@ public class CustomerLogin extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_customer_login);
-        adminBtn = findViewById(R.id.adminButton);
+        adminBtn = findViewById(R.id.adminButtonAA);
         registerBtn = findViewById(R.id.registerButton);
 
         adminBtn.setOnClickListener(new View.OnClickListener() {
