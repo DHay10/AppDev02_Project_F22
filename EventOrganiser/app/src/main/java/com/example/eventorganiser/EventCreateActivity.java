@@ -48,7 +48,7 @@ public class EventCreateActivity extends AppCompatActivity {
         dateB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showDatePickerDialog(v);
+                //showDatePickerDialog(v);
             }
         });
 
@@ -69,14 +69,6 @@ public class EventCreateActivity extends AppCompatActivity {
                 }
             }
         });
-
-
-
-
-
-
-
-
     }
 
     public void showDatePickerDialog(View v) {
