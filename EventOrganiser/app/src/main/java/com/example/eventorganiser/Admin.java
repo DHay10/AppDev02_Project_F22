@@ -1,8 +1,6 @@
 package com.example.eventorganiser;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-public class Admin extends AppCompatActivity {
+public class Admin {
 
     int id;
     String username, password;
@@ -43,9 +41,5 @@ public class Admin extends AppCompatActivity {
     public void setPassword(String password) {
         this.password = password;
     }
-
-
-
-
 
 }
