@@ -28,16 +28,13 @@ public class AdminLogin extends AppCompatActivity {
       loginBtn.setOnClickListener(new View.OnClickListener() {
           @Override
           public void onClick(View view) {
-              String loginID = "a";
-              String loginPASS = "s";
-              if (adminUser.getText().toString().equals(loginID) && adminPass.getText().toString().equals(loginPASS)) {
+              if(adminUser.getText().toString().equals("admin") && adminPass.getText().toString().equals("123")) {
                   Intent i = new Intent(getApplicationContext(), DashboardActivity.class);
-                //  loginID = "Admin";
-               //   i.putExtra("user", loginID);
                   startActivity(i);
-              } else {
-                  Toast.makeText(getApplicationContext(), "Please enter valid username and password", Toast.LENGTH_SHORT).show();
               }
+
+
+
           }
       });
 
