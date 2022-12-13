@@ -22,7 +22,7 @@ public class URegister extends AppCompatActivity {
     private static final String TAG = "EmailPassword";
 
     Button signUpB, backB;
-    EditText usernameET, emailET, passET, passConfET;
+    EditText emailET, passET, passConfET;
     private FirebaseAuth mAuth;
 
     @Override
@@ -31,7 +31,6 @@ public class URegister extends AppCompatActivity {
         setContentView(R.layout.activity_uregister);
 
         // Association
-        usernameET = findViewById(R.id.usernameRET);
         emailET = findViewById(R.id.emailRET);
         passET = findViewById(R.id.passwordRET);
         passConfET = findViewById(R.id.passConfRET);
@@ -49,20 +48,27 @@ public class URegister extends AppCompatActivity {
                 String email = emailET.getText().toString();
                 String pass = passET.getText().toString();
                 String passConf = passConfET.getText().toString();
-                String username = usernameET.getText().toString();
 
-                if (username.length() <= 0 || email.length() <= 0 || pass.length() <= 0
+                if (email.length() <= 0 || pass.length() <= 0
                         || passConf.length() <= 0) {
                     Toast.makeText(URegister.this, "Enter All Data",
                             Toast.LENGTH_SHORT).show();
-                } else {
-                    if (pass.equals(passConf)) {
-                        createAccount(email, pass);
-                    } else {
-                        Toast.makeText(URegister.this, "Passwords doesn't match",
-                                Toast.LENGTH_SHORT).show();
-                    }
+                    return;
                 }
+
+                if (pass.length() < 6) {
+                    Toast.makeText(URegister.this, "Password must have at least 6 characters",
+                            Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                if (!pass.equals(passConf)) {
+                    Toast.makeText(URegister.this, "Passwords doesn't match",
+                            Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                createAccount(email, pass);
             }
         });
     }
