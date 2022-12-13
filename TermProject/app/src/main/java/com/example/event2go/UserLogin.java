@@ -14,7 +14,6 @@ public class UserLogin extends AppCompatActivity {
     EditText usernameET, passwordET;
     DBHelper helper;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
