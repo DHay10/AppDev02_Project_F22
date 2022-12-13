@@ -94,9 +94,7 @@ public class ULogin extends AppCompatActivity {
                             FirebaseUser user = mAuth.getCurrentUser();
                             Toast.makeText(ULogin.this, "Authentication Passed.",
                                     Toast.LENGTH_SHORT).show();
-                            Intent i = new Intent(getApplicationContext(), UDashboard.class);
-                            startActivity(i);
-
+                            updateUI(user);
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w(TAG, "signInWithEmail:failure", task.getException());
@@ -109,4 +107,14 @@ public class ULogin extends AppCompatActivity {
     }
 
     private void reload() { }
+
+    private void updateUI(FirebaseUser user) {
+        if (user.getDisplayName() == null) {
+            Intent i = new Intent(getApplicationContext(), UCreateProfile.class);
+            startActivity(i);
+        } else {
+            Intent i = new Intent(getApplicationContext(), UDashboard.class);
+            startActivity(i);
+        }
+    }
 }
