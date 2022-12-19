@@ -4,67 +4,97 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UEventList">
+    tools:context=".EventList">
 
     <Button
         android:id="@+id/calendarB"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#FF0000"
         android:fontFamily="sans-serif-medium"
         android:text="Calendar"
         app:cornerRadius="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/logoutIB"
+        android:id="@+id/filtersIV"
         android:layout_width="40dp"
         android:layout_height="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.7"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.011"
+        app:layout_constraintVertical_bias="0.02"
+        app:srcCompat="@drawable/elpic1" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02"
         app:srcCompat="@drawable/elpic3" />
 
     <ImageView
-        android:id="@+id/profileIB"
+        android:id="@+id/imageView5"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/logoutIB"
-        app:layout_constraintHorizontal_bias="0.972"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.011"
-        app:srcCompat="@drawable/elpic2" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.831"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/calendarB"
-        app:layout_constraintVertical_bias="0.98" />
-
-    <ImageButton
-        android:id="@+id/filtersIB"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:backgroundTint="#00FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/profileIB"
-        app:layout_constraintHorizontal_bias="0.952"
-        app:layout_constraintStart_toEndOf="@+id/calendarB"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.011"
-        app:srcCompat="@drawable/elpic1" />
+        app:layout_constraintVertical_bias="0.02"
+        app:srcCompat="@drawable/elpic2" />
+
+    <Button
+        android:id="@+id/backB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FF0000"
+        android:fontFamily="sans-serif-medium"
+        android:text="Back"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/eventsTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Events"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="409dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/backB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventsTV" />
 </androidx.constraintlayout.widget.ConstraintLayout>

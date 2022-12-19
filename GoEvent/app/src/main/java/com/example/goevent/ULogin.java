@@ -16,11 +16,6 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 public class ULogin extends AppCompatActivity {
 
@@ -29,7 +24,6 @@ public class ULogin extends AppCompatActivity {
     Button adminB, loginB, registerB;
     EditText emailET, passwordET;
     private FirebaseAuth mAuth;
-    private DatabaseReference mRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +37,6 @@ public class ULogin extends AppCompatActivity {
         loginB = findViewById(R.id.loginUB);
         registerB = findViewById(R.id.registerUB);
         mAuth = FirebaseAuth.getInstance();
-        mRef = FirebaseDatabase.getInstance().getReference();
 
         // Login Button
         loginB.setOnClickListener(new View.OnClickListener() {
@@ -90,6 +83,7 @@ public class ULogin extends AppCompatActivity {
     }
 
     private void signIn(String email, String password) {
+        // [START sign_in_with_email]
         mAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
@@ -97,9 +91,10 @@ public class ULogin extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
                             Log.d(TAG, "signInWithEmail:success");
+                            FirebaseUser user = mAuth.getCurrentUser();
                             Toast.makeText(ULogin.this, "Authentication Passed.",
                                     Toast.LENGTH_SHORT).show();
-                            updateUI();
+                            updateUI(user);
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w(TAG, "signInWithEmail:failure", task.getException());
@@ -108,31 +103,18 @@ public class ULogin extends AppCompatActivity {
                         }
                     }
                 });
+        // [END sign_in_with_email]
     }
 
     private void reload() { }
 
-    private void updateUI() {
-        FirebaseUser user = mAuth.getCurrentUser();
-        // Check if User has a profile in the DB
-        mRef.child("users").addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                // Redirects to Dashboard
-                if (snapshot.hasChild(user.getUid())) {
-                    Intent i = new Intent(getApplicationContext(), UEventList.class);
-                    startActivity(i);
-                // Redirects to Create Profile
-                } else {
-                    Intent i = new Intent(getApplicationContext(), UCreateProfile.class);
-                    startActivity(i);
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
+    private void updateUI(FirebaseUser user) {
+        if (user.getDisplayName() == null) {
+            Intent i = new Intent(getApplicationContext(), UCreateProfile.class);
+            startActivity(i);
+        } else {
+            Intent i = new Intent(getApplicationContext(), UDashboard.class);
+            startActivity(i);
+        }
     }
 }

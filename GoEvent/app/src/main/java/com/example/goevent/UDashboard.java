@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class AEventDetails extends AppCompatActivity {
+public class UDashboard extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_event_details);
+        setContentView(R.layout.activity_udashboard);
     }
 }

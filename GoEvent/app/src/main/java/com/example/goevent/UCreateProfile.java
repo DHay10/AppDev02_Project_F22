@@ -3,7 +3,6 @@ package com.example.goevent;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -16,8 +15,6 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.UserProfileChangeRequest;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 
 public class UCreateProfile extends AppCompatActivity {
 
@@ -26,7 +23,6 @@ public class UCreateProfile extends AppCompatActivity {
     Button confirmB;
     EditText fNameET, lNameET, phoneET;
     private FirebaseAuth mAuth;
-    private DatabaseReference mRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +35,6 @@ public class UCreateProfile extends AppCompatActivity {
         lNameET = findViewById(R.id.lastNameInput);
         phoneET = findViewById(R.id.phoneNumberInput);
         mAuth = FirebaseAuth.getInstance();
-        mRef = FirebaseDatabase.getInstance().getReference();
 
         confirmB.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,15 +47,30 @@ public class UCreateProfile extends AppCompatActivity {
                     Toast.makeText(UCreateProfile.this, "Enter All Data", Toast.LENGTH_SHORT).show();
                 } else {
                     FirebaseUser currentUser = mAuth.getCurrentUser();
-                    mRef.child("users").child(currentUser.getUid()).child("fName").setValue(fName);
-                    mRef.child("users").child(currentUser.getUid()).child("lName").setValue(lName);
-                    mRef.child("users").child(currentUser.getUid()).child("phone").setValue(phone);
-                    Intent intent = new Intent(getApplicationContext(), UEventList.class);
-                    startActivity(intent);
                 }
 
             }
         });
     }
 
+
+    public void updateProfile() {
+        // [START update_profile]
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+
+        UserProfileChangeRequest profileUpdates = new UserProfileChangeRequest.Builder()
+                .setDisplayName("Jane Q. User")
+                .build();
+
+        user.updateProfile(profileUpdates)
+                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        if (task.isSuccessful()) {
+                            Log.d(TAG, "User profile updated.");
+                        }
+                    }
+                });
+        // [END update_profile]
+    }
 }

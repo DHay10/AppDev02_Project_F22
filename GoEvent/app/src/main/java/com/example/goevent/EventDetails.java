@@ -1,14 +1,14 @@
 package com.example.goevent;
 
-import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
 
-public class AEventList extends AppCompatActivity {
+import android.os.Bundle;
+
+public class EventDetails extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_aevent_list);
+        setContentView(R.layout.activity_event_details);
     }
 }
