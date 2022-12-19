@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.goevent">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <application
         android:allowBackup="true"
@@ -14,25 +13,32 @@
         android:theme="@style/Theme.GoEvent"
         tools:targetApi="31">
         <activity
-            android:name=".ProfileEdit"
+            android:name=".AEventList"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".UProfileEdit"
             android:exported="false" />
         <activity
-            android:name=".Filters"
+            android:name=".UFilters"
             android:exported="false" />
         <activity
-            android:name=".EventOptions"
+            android:name=".AEventOptions"
             android:exported="false" />
         <activity
-            android:name=".EventList"
+            android:name=".UEventList"
             android:exported="false" />
         <activity
-            android:name=".EventDetails"
+            android:name=".AEventDetails"
             android:exported="false" />
         <activity
-            android:name=".EventCreate"
+            android:name=".AEventCreate"
             android:exported="false" />
         <activity
-            android:name=".EventCalendar"
+            android:name=".UEventCalendar"
             android:exported="false" />
         <activity
             android:name=".UCreateProfile"
@@ -50,13 +56,6 @@
         </activity>
         <activity
             android:name=".ALogin"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".UDashboard"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

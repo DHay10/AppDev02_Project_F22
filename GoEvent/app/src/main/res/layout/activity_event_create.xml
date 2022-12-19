@@ -4,6 +4,170 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EventCreate">
+    tools:context=".AEventCreate">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/createB"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:text="Create"
+                app:cornerRadius="50px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.945"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/descriptionET"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/dateET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="Date"
+                android:inputType="date"
+                android:minHeight="48dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nbPlaceET"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Spinner
+                android:id="@+id/typeS"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:minHeight="48dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dateET"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/titleEventCreateTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event Creation"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.041" />
+
+            <EditText
+                android:id="@+id/eventTitleET"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:hint="Title"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/eventImageB"
+                app:layout_constraintVertical_bias="0.043" />
+
+            <EditText
+                android:id="@+id/nbPlaceET"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="128dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="128dp"
+                android:ems="10"
+                android:hint="Number Of Places"
+                android:inputType="number"
+                android:minHeight="48dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/eventTitleET"
+                app:layout_constraintVertical_bias="0.002" />
+
+            <ImageButton
+                android:id="@+id/eventImageB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titleEventCreateTV"
+                app:layout_constraintVertical_bias="0.049"
+                app:srcCompat="@drawable/picture_bubble" />
+
+            <Button
+                android:id="@+id/backB1"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:text="Back"
+                app:cornerRadius="50px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.05"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/descriptionET"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/descriptionET"
+                android:layout_width="0dp"
+                android:layout_height="405dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Description"
+                android:inputType="textMultiLine"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/typeS"
+                app:layout_constraintVertical_bias="0.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

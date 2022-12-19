@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class ProfileEdit extends AppCompatActivity {
+public class UProfileEdit extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

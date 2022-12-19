@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class EventOptions extends AppCompatActivity {
+public class UEventCalendar extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_event_options);
+        setContentView(R.layout.activity_event_calendar);
     }
 }
