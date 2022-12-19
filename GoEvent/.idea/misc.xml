@@ -3,6 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ashmi/Documents/GitHub/AppDev02_Project_F22/GoEvent/app/src/main/res/layout/activity_adashboard.xml" value="0.264" />
+        <entry key="..\:/Users/ashmi/Documents/GitHub/AppDev02_Project_F22/GoEvent/app/src/main/res/layout/activity_aevent_list.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/ashmi/Documents/GitHub/AppDev02_Project_F22/GoEvent/app/src/main/res/layout/activity_event_calendar.xml" value="0.25" />
+        <entry key="..\:/Users/ashmi/Documents/GitHub/AppDev02_Project_F22/GoEvent/app/src/main/res/layout/activity_event_create.xml" value="0.25" />
+        <entry key="..\:/Users/ashmi/Documents/GitHub/AppDev02_Project_F22/GoEvent/app/src/main/res/layout/activity_event_details.xml" value="0.25" />
+        <entry key="..\:/Users/ashmi/Documents/GitHub/AppDev02_Project_F22/GoEvent/app/src/main/res/layout/activity_event_list.xml" value="0.25" />
+        <entry key="..\:/Users/ashmi/Documents/GitHub/AppDev02_Project_F22/GoEvent/app/src/main/res/layout/activity_event_options.xml" value="0.25" />
+        <entry key="..\:/Users/ashmi/Documents/GitHub/AppDev02_Project_F22/GoEvent/app/src/main/res/layout/activity_filters.xml" value="0.25" />
         <entry key="..\:/Users/ibrah_cfuwhor/OneDrive/Documents/GitHub/AppDev02_Project_F22/GoEvent/app/src/main/res/layout/activity_adashboard.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/ibrah_cfuwhor/OneDrive/Documents/GitHub/AppDev02_Project_F22/GoEvent/app/src/main/res/layout/activity_alogin.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/ibrah_cfuwhor/OneDrive/Documents/GitHub/AppDev02_Project_F22/GoEvent/app/src/main/res/layout/activity_event_calendar.xml" value="0.1" />
