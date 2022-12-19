@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">GoEvent</string>
+
+    <string-array name="types_array">
+        <item>Sport</item>
+        <item>Music</item>
+        <item>Party</item>
+        <item>Food</item>
+        <item>Festival</item>
+    </string-array>
 </resources>
