@@ -50,6 +50,11 @@ public class AEventCreate extends AppCompatActivity implements AdapterView.OnIte
 
         typeS = findViewById(R.id.typeS);
 
+        Calendar calendar = Calendar.getInstance();
+        final int year = calendar.get(Calendar.YEAR);
+        final int month = calendar.get(Calendar.MONTH);
+        final int day = calendar.get(Calendar.DAY_OF_MONTH);
+
         mRef = FirebaseDatabase.getInstance().getReference();
 
         // Spinner Init
@@ -73,8 +78,35 @@ public class AEventCreate extends AppCompatActivity implements AdapterView.OnIte
         dateET.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new DatePickerDialog(getApplicationContext(),date,myCalendar.get(Calendar.YEAR),
-                        myCalendar.get(Calendar.MONTH),myCalendar.get(Calendar.DAY_OF_MONTH)).show();
+//                final Calendar c = Calendar.getInstance();
+//                int mYear = c.get(Calendar.YEAR);
+//                int mMonth = c.get(Calendar.MONTH);
+//                int mDay = c.get(Calendar.DAY_OF_MONTH);
+//
+//
+//                DatePickerDialog datePickerDialog = new DatePickerDialog(this,
+//                        new DatePickerDialog.OnDateSetListener() {
+//
+//                            @Override
+//                            public void onDateSet(DatePicker view, int year,
+//                                                  int monthOfYear, int dayOfMonth) {
+//
+//                                dateET.setText(dayOfMonth + "-" + (monthOfYear + 1) + "-" + year);
+//
+//                            }
+//                        }, mYear, mMonth, mDay);
+//                datePickerDialog.show();
+                DatePickerDialog datePickerDialog = new DatePickerDialog(
+
+                        AEventCreate.this, new DatePickerDialog.OnDateSetListener() {
+                    @Override
+                    public void onDateSet(DatePicker view, int year, int month, int day) {
+                        month = month+1;
+                        String date = day+"/"+month+"/"+year;
+                        dateET.setText(date);
+                    }
+                },year,month,day);
+                datePickerDialog.show();
             }
         });
 
