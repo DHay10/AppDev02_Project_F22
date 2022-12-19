@@ -3,15 +3,15 @@ package com.example.goevent;
 import java.util.Date;
 
 public class Event {
-    int eventID, nbPlaces;
-    String title, description, type;
-    Date date;
+    String eventID, title, description, type, date;
+    int nbPlaces;
+//    Date date;
 
     public Event() {
 
     }
 
-    public Event(int eventID, int nbPlaces, String title, String description, String type, Date date) {
+    public Event(String eventID, int nbPlaces, String title, String description, String type, String date) {
         this.eventID = eventID;
         this.nbPlaces = nbPlaces;
         this.title = title;
@@ -20,7 +20,7 @@ public class Event {
         this.date = date;
     }
 
-    public Event(int nbPlaces, String title, String description, String type, Date date) {
+    public Event(int nbPlaces, String title, String description, String type, String date) {
         this.nbPlaces = nbPlaces;
         this.title = title;
         this.description = description;
@@ -28,11 +28,11 @@ public class Event {
         this.date = date;
     }
 
-    public int getEventID() {
+    public String getEventID() {
         return eventID;
     }
 
-    public void setEventID(int eventID) {
+    public void setEventID(String eventID) {
         this.eventID = eventID;
     }
 
@@ -50,5 +50,29 @@ public class Event {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public int getNbPlaces() {
+        return nbPlaces;
+    }
+
+    public void setNbPlaces(int nbPlaces) {
+        this.nbPlaces = nbPlaces;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
     }
 }
