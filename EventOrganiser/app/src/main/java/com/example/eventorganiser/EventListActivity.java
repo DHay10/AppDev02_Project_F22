@@ -21,6 +21,7 @@ public class EventListActivity extends AppCompatActivity {
 
         backB = findViewById(R.id.backB);
 
+        //go back to Dashboard Activity
         backB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -40,6 +41,9 @@ public class EventListActivity extends AppCompatActivity {
             }
         });
 
+
+
+        //go to filters class
         filtersIm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

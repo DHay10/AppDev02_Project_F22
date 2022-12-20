@@ -1,52 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView
-        android:id="@+id/eventListAdmin"
+        android:id="@+id/titleAdminTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-medium"
-        android:text="Events"
-        android:textAlignment="center"
-        android:textColor="#FF0000"
-        android:textSize="25sp"
+        android:text="Attendees"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="80dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/adminEventList"
-        android:layout_width="415dp"
-        android:layout_height="589dp"
-        tools:layout_editor_absoluteX="-5dp"
-        tools:layout_editor_absoluteY="51dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.065" />
 
     <Button
-        android:id="@+id/backToDashboard"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:id="@+id/backToOptions"
+        android:layout_width="397dp"
+        android:layout_height="88dp"
         android:layout_marginStart="64dp"
         android:layout_marginEnd="64dp"
-        android:layout_marginBottom="16dp"
         android:backgroundTint="#FF0000"
         android:fontFamily="sans-serif-medium"
         android:text="Back"
-        app:cornerRadius="25dp"
+        android:textSize="40dp"
+        app:cornerRadius="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.964" />
 
-
-
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/adminAttendees"
+        android:layout_width="958dp"
+        android:layout_height="1348dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="212dp"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
