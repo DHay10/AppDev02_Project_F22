@@ -2,6 +2,7 @@ package com.example.goevent;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -37,6 +38,30 @@ public class UEventList extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Logged Out.",
                         Toast.LENGTH_SHORT).show();
                 finish();
+            }
+        });
+
+        calendarB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), UEventCalendar.class);
+                startActivity(intent);
+            }
+        });
+
+        profileIB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), UProfileEdit.class);
+                startActivity(intent);
+            }
+        });
+
+        filtersIB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), UFilters.class);
+                startActivity(intent);
             }
         });
     }
