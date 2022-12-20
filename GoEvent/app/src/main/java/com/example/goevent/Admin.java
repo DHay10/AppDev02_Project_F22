@@ -1,5 +1,5 @@
 package com.example.goevent;
-
+// Class to be implemented when expansion is made.
 public class Admin {
     int id;
     String username, password;
