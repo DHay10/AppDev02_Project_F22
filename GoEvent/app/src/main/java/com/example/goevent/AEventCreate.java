@@ -126,7 +126,9 @@ public class AEventCreate extends AppCompatActivity implements AdapterView.OnIte
 
                 Event newEvent = new Event(nbPlaces, title, description, type, date);
                 mRef.child("events").push().setValue(newEvent);
-
+                Toast.makeText(AEventCreate.this, "The Event was Successfully Created",
+                        Toast.LENGTH_SHORT).show();
+                finish();
             }
         });
     }
