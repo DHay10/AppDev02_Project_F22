@@ -24,6 +24,7 @@ public class EventCreateActivity extends AppCompatActivity {
     Spinner typeS;
     TextView dateTV;
     EditText titleB, descriptionB;
+    DBHelper dbHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +38,7 @@ public class EventCreateActivity extends AppCompatActivity {
         createB = findViewById(R.id.createB);
         titleB = findViewById(R.id.titleET);
         descriptionB = findViewById(R.id.descriptionET);
-
+        dbHelper = new DBHelper(EventCreateActivity.this);
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.types, android.R.layout.simple_spinner_item);
@@ -47,13 +48,9 @@ public class EventCreateActivity extends AppCompatActivity {
         dateB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showDatePickerDialog(v);
+                //showDatePickerDialog(v);
             }
         });
-
-
-
-
 
         createB.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,32 +61,15 @@ public class EventCreateActivity extends AppCompatActivity {
                 if (title.length() <= 0 || description.length() <= 0) {
                     Toast.makeText(EventCreateActivity.this, "Enter All Data", Toast.LENGTH_SHORT).show();
                 } else {
-
-                    DBHelper dbHelperr = new DBHelper(EventCreateActivity.this);
-                   User newUser = new User(title, description);
-                   dbHelperr.addUser(newUser);
-                   Toast.makeText(getApplicationContext(), "Signed up successfully!",
-                   Toast.LENGTH_SHORT).show(); Intent i = new Intent(getApplicationContext(), EventListActivity.class);
-                   startActivity(i);
-
-
-
+//                    Event newEvent = new Event(title, description);
+//                    dbHelper.addEvent(newEvent);
+                    Toast.makeText(getApplicationContext(), "Event Added Successfully!",
+                    Toast.LENGTH_SHORT).show(); Intent i = new Intent(getApplicationContext(), EventListActivity.class);
+                    startActivity(i);
                 }
             }
         });
-
-
-
-
-
-
-
-
     }
-
-
-
-
 
     public void showDatePickerDialog(View v) {
         DialogFragment newFragment = new DatePickerFragment();

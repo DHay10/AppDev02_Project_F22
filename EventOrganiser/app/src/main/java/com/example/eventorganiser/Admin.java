@@ -11,12 +11,11 @@ public class Admin {
         this.password = password;
     }
 
-    public Admin(int contentLayoutId, int id, String username, String password) {
-        super(contentLayoutId);
-        this.id = id;
-        this.username = username;
-        this.password = password;
-    }
+//    public Admin(int contentLayoutId, int id, String username, String password) {
+//        this.id = id;
+//        this.username = username;
+//        this.password = password;
+//    }
 
     public int getId() {
         return id;

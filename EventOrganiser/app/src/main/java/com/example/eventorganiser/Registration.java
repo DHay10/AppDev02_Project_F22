@@ -52,6 +52,11 @@ public class Registration extends AppCompatActivity {
                         dbHelper = new DBHelper(Registration.this);
                         User newUser = new User(username, email, password);
                         dbHelper.addUser(newUser);
+
+                        Intent att = new Intent(getApplicationContext(), Attendees.class);
+                        att.putExtra("username", usernameET.getText().toString());
+
+
                         Toast.makeText(getApplicationContext(), "Signed up successfully!",
                                 Toast.LENGTH_SHORT).show();
                         Intent i = new Intent(getApplicationContext(), ProfileCreation.class);
@@ -60,7 +65,6 @@ public class Registration extends AppCompatActivity {
                         Toast.makeText(Registration.this, "Passwords doesn't match",
                                 Toast.LENGTH_SHORT).show();
                     }
-
                 }
             }
         });

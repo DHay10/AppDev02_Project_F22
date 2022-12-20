@@ -46,5 +46,16 @@
         app:layout_constraintVertical_bias="0.976"
         tools:ignore="TextContrastCheck" />
 
+    <TextView
+        android:id="@+id/test"
+        android:layout_width="129dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="188dp"
+        android:text="test"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
