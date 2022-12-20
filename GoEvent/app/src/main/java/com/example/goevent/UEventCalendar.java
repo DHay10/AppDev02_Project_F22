@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 public class UEventCalendar extends AppCompatActivity {
     Button listB;
@@ -24,6 +27,7 @@ public class UEventCalendar extends AppCompatActivity {
         listB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                finish();
                 Intent intent = new Intent(getApplicationContext(), UEventList.class);
                 startActivity(intent);
             }
@@ -48,8 +52,10 @@ public class UEventCalendar extends AppCompatActivity {
         logoutIV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), ULogin.class);
-                startActivity(intent);
+                FirebaseAuth.getInstance().signOut();
+                Toast.makeText(getApplicationContext(), "Logged Out.",
+                        Toast.LENGTH_SHORT).show();
+                finish();
             }
         });
     }

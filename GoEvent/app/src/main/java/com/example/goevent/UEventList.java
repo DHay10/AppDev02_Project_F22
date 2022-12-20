@@ -44,6 +44,7 @@ public class UEventList extends AppCompatActivity {
         calendarB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                finish();
                 Intent intent = new Intent(getApplicationContext(), UEventCalendar.class);
                 startActivity(intent);
             }
